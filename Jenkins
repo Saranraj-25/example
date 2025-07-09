@@ -1,19 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage(checkout) {
+        stage(build) {
             steps {
-                git branch: 'main', credentialsId: '688b0848-389f-4a39-a6b2-9c8e80ee4830', url: 'https://github.com/Saranraj-25/example.git'
+                echo " building "
             }
         }
         stage('Test') {
             steps {
-                echo "testing the code "
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo " deploying the cide "
+                echo "test "
             }
         }
     }
