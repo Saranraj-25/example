@@ -8,12 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "testing the code "
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo " deploying the cide "
+                echo "test "
             }
         }
     }
